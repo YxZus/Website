@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Famri Inc.</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<head>
+<body>
+
+<header>
+    <img src="media/logo.png" alt="Dim Photos. logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</li></a>
+            <li><a href="about.html">About</li></a>
+            <li><a href="contact.html">Contact</li></a>
+        </ul>
+    </nav>
+</header>
+
+<section class="home-hero">
+    <div class="container">
+        <h1 class="title">Making amazing memories
+            <span>for people who make amazing things</span>
+        </h1>
+        <a href="about.html" class="button button-accent">See our work</a>
+    </div>
+</section>
+
+<div class="container">
+    <section class="home-about">
+        <div class="home-about-textbox">
+            <h1>Who we are</h1>
+            <p>A wonderful serenity has taken possession of my entire soul, 
+            like these sweet mornings of spring which I enjoy with my whole 
+            heart. I am alone, and feel the charm of existence in this spot, 
+            which was...</p>
+            <p><strong>Created for the bliss</strong> of souls like mine. 
+            I am so happy, my dear friend, so absorbed in the exquisite 
+            sense of mere tranquil existence, that I neglect my talents. 
+            I should be in.</p>
+        </div>
+    </section>
+</div>
+
+<div class="slideshow-container">
+
+    <!-- Slideshow 1 -->
+    <div class="slides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="media/img1.jpg" alt="gallerypre item" style="width:100%">
+        <div class="text">Project 1</div>
+    </div>
+
+    <!-- Slideshow 2 -->
+    <div class="slides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="media/img2.jpg" alt="gallerypre item" style="width:100%">
+        <div class="text">Project 2</div>
+    </div>
+
+    <!-- Slideshow 3 -->
+    <div class="slides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="media/img3.jpg" alt="gallerypre item" style="width:100%">
+        <div class="text">Project 3</div>
+    </div>
+
+    <!-- Slideshow 4 -->
+    <div class="slides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="media/img4.jpg" alt="gallerypre item" style="width:100%">
+        <div class="text">Project 4</div>
+    </div>
+
+    <!-- Slideshow 5 -->
+    <div class="slides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="media/img5.jpg" alt="gallerypre item" style="width:100%">
+        <div class="text">Project 5</div>
+    </div>
+
+    <!-- Slideshow 6 -->
+    <div class="slides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="media/img6.jpg" alt="gallerypre item" style="width:100%">
+        <div class="text">Project 6</div>
+     </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+</div>
+
+<section class="cta">
+    <div class="container">
+        <h1 class="title cta-title">Like what you see?
+            <span>Then what are you waiting for?</span>
+        </h1>
+        <a href="contact.html" class="button button-dark">Hire us</a>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="col-3">
+            <p>Far far away, behind the word mountains, far from the 
+            countries Vokalia and Consonantia, there live the blind 
+            texts. Separated they live in Bookmarksgrove right at 
+            the coast of the Semantics, a large language ocean..</p>
+        </div>
+        
+        <div class="col-1">
+            <ul class="unstyled-list">
+                <li><strong>Dim. Corp</strong></li>
+                <li>Contact</li>
+                <li>Number</li>
+                <li>Street</li>
+                <li>Mail</li>
+            </ul>
+        </div>
+
+        <div class="col-1">
+            <ul class="unstyled-list">
+                <li><strong>Information</strong></li>
+                <li>Shoreditch</li>
+                <li>070-543 692</li>
+                <li>Arf Street 03</li>
+                <li>Office@Dimcorp.com</li>
+            </ul>
+        </div>
+
+        <div class="col-1">
+            <ul class="unstyled-list">
+                <li><strong>Copyright</strong></li>
+                <li>All rights</li>
+                <li>belong</li>
+                <li>to Owner</li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myScript").src;
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+        
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+        
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+</body>
+</head>
+</html>
