@@ -133,6 +133,10 @@ footer::after {
     width: 16.6666%;
   }
 
+  .home-about-textbox {
+    width: 98.8vw;
+  }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -331,10 +335,6 @@ nav a:focus {
   .home-about-textbox h1 {
     top: .6em;
     padding: 0 .2em;
-  }
-    
-  .home-about-textbox {
-    width: 98.8vw;
   }
 
 }
