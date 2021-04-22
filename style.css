@@ -132,10 +132,6 @@ footer::after {
   .col-1 {
     width: 16.6666%;
   }
-
-  .home-about-textbox {
-    width: 98.8vw;
-  }
     
 }
 
@@ -337,6 +333,11 @@ nav a:focus {
     padding: 0 .2em;
   }
 
+  .home-about-textbox {
+    width: 98.8vw;
+    margin-left: -2.7%;
+  }    
+    
 }
 
 @media (min-width: 60rem) {
