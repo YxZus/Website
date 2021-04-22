@@ -8,26 +8,26 @@ body {
 }
 
 input[type=text], select, textarea {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 12px;
-  resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px;
+    resize: vertical;
 }
 
 label {
-  display: inline-block;  
-  padding: 12px 12px 12px 0;
+    display: inline-block;  
+    padding: 12px 12px 12px 0;
 }
 
 input[type=submit] {
-  width: 100%;
-  background-color: #00d5ff;
-  color: white;
-  padding: 14px 20px;
-  margin: 0px 0;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
+    background-color: #00d5ff;
+    border: none;
+    border-radius: 0px;
+    color: white;
+    cursor: pointer;
+    margin: 0px 0;
+    padding: 14px 20px;
+    width: 100%;
 }
 
 input[type=submit]:hover {
@@ -35,22 +35,22 @@ input[type=submit]:hover {
 }
 
 .container {
-  margin: 0 auto;
-  width: 95%;
+    margin: 0 auto;
+    width: 95%;
 }
 
 .clearfix::after,
 section::after,
 footer::after {
-  content: '';
-  display: block;
-  clear: both;
+    clear: both;
+    content: '';
+    display: block;
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    clear: both;
+    content: "";
+    display: table;
 }
 
 
@@ -59,64 +59,62 @@ footer::after {
 
 
 .col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
+    float: left;
+    margin-top: 6px;
+    width: 25%;
 }
 
 .col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
+    float: left;
+    margin-top: 6px;
+    width: 75%;
 }
 
-
-
 [class^=col-] {
-  width: 100%;
-  margin-top: 1em;
+    margin-top: 1em;
+    width: 100%;
 }
 
 [class^=col-]:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .col-1 {
-  width: 33.33334%;
-  float: left;
+    float: left;
+    width: 33.33334%;
 }
 
 @media (min-width: 43rem) {
 
-  [class^=col-] {
-    float: left;
-    padding: 0 .5em;
-    margin-top: 0;
-  }
+    [class^=col-] {
+        float: left;
+        margin-top: 0;
+        padding: 0 .5em;
+    }
 
-  [class^=col-]:first-child {
-    padding-left: 0;
-  }
+    [class^=col-]:first-child {
+        padding-left: 0;
+    }
   
-  [class^=col-]:last-child {
-    padding-right: 0;
-  }
+    [class^=col-]:last-child {
+        padding-right: 0;
+    }
 
-  .col-3 {
-    width: 50%;
-  }
+    .col-3 {
+        width: 50%;
+    }
 
-  .col-1 {
-    width: 16.6666%;
-  }
+    .col-1 {
+        width: 16.6666%;
+    }
 
 }
 
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
+    .col-25, .col-75, input[type=submit] {
     margin-top: 0;
-  }
+    width: 100%;
+    }
 }
 
 /* Typography
@@ -124,44 +122,44 @@ footer::after {
 
 
 h1 {
-  font-weight: 300;
-  font-size: 1.5rem;
-  margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 0;
 }
 
 .title {
-  font-size: 2rem;
-  margin-bottom: 1.8em;
-  font-weight: 900;
-  margin-top: 1em;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 1.8em;
+    margin-top: 1em;
 }
 
 .title span {
-  font-weight: 300;
-  display: block;
-  font-size: .9em;
+    display: block;
+    font-size: .9em;
+    font-weight: 300;
 }
 
 .title-cta {
-  margin: .2em;
+    margin: .2em;
 }
 
 .unstyled-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    	list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 @media (min-width:60rem) {
 
-  p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
+    p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
 
-  .title {
-    font-size: 3.7rem;
-  }
+    .title {
+        font-size: 3.7rem;
+    }
 }
 
 
@@ -171,43 +169,41 @@ h1 {
 
 
 .button {
-  display: inline-block;
-  font-size: 1.15rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-width: 2px;
-  border-style: solid;
-  padding: .5em 1.75em;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    font-size: 1.15rem;
+    padding: .5em 1.75em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .button-accent {
-  color: #00d5ff;
-  border-color: #00d5ff;
+    border-color: #00d5ff;
+    color: #00d5ff;
 }
 
 .button-accent:hover,
 .button-accent:focus{
-  background: #00d5ff;
-  color: #232323;
-  
+    background: #00d5ff;
+    color: #232323;
 }
 
 .button-dark {
-  color: #232323;
-  border-color: #232323;
+    border-color: #232323;
+    color: #232323;
 }
 
 .button-dark:hover,
 .button-dark:focus{
-  background: #232323;
-  color: #00d5ff;
-  
+    background: #232323;
+    color: #00d5ff;
 }
 
 @media (min-width: 60rem) {
-  .button {
-    font-size: 1.5rem;
-  }
+    .button {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -216,17 +212,17 @@ h1 {
 
 
 header {
-    position: absolute;
     left: 0;
-    right: 0;
     margin-top: 1em;
     margin: 1.5em;
+    position: absolute;
+    right: 0;
 }
 
 nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 nav li {
@@ -235,27 +231,27 @@ nav li {
 }
 
 nav a {
+    color: #FFF;
+    font-size: .8rem;
     font-weight: 900;
+    padding: .5em;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .8rem;
-    padding: .5em;
-    color: #FFF;
 }
 
 nav a:hover,
 nav a:focus {
-  color: #DDD;
+    color: #DDD;
 }
 
 @media (min-width:60rem) {
-  .logo {
-    float: left;
-  }
+    .logo {
+        float: left;
+    }
 
-  nav {
-    float: right;
-  }
+    nav {
+        float: right;
+    }
 }
 
 
@@ -265,61 +261,61 @@ nav a:focus {
 
 .home-hero {
     background-image: url(hero-bg.jpg);
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     padding: 10em 0;
     color: #FFF;
 }
 
 @media (min-width: 60rem) {
-  .home-hero {
-    height: 100vh;
-    padding-top: 35vh;
-  }
+    .home-hero {
+        height: 100vh;
+        padding-top: 35vh;
+    }
 
 }
 
 .home-about-textbox {
-  background-color: #232323;
-  padding: 4em;
-  width: 100vw;
-  margin-left: -2.6%;
-  outline: 2px solid #00d5ff;
-  outline-offset: -2.5em;
-  color: #FFF;
-  position: relative;
+    background-color: #232323;
+    color: #FFF;
+    padding: 4em;
+    margin-left: -2.6%;
+    outline: 2px solid #00d5ff;
+    outline-offset: -2.5em;
+    position: relative;
+    width: 100vw;
 }
 
 .home-about-textbox h1 {
-  color: #00d5ff;
-  position: absolute;
-  transform: translate(-50%);
-  left: 50%;
-  top: .96em;
-  background: #232323;
-  padding: 0 .145em;
+    background: #232323;
+    color: #00d5ff;
+    left: 50%;
+    padding: 0 .145em;
+    position: absolute;
+    top: .96em;
+    transform: translate(-50%);
 }
 
 @media (min-width: 25rem) {
-  h1 {
-    font-size: 2rem;
-  }
+    h1 {
+        font-size: 2rem;
+    }
 
-  .home-about-textbox h1 {
-    top: .6em;
-    padding: 0 .2em;
-  }
+    .home-about-textbox h1 {
+        top: .6em;
+        padding: 0 .2em;
+    }
 }
 
 @media (min-width: 60rem) {
-  h1 {
-    font-size: 2.5rem;
-  }
+    h1 {
+        font-size: 2.5rem;
+    }
 
-  .home-about-textbox h1 {
-    top: .36em;
-    padding: 0 .36em;
-  }
+    .home-about-textbox h1 {
+        padding: 0 .36em;
+        top: .36em;
+    }
 }
 
 
@@ -328,8 +324,8 @@ nav a:focus {
 
 
 .cta {
-  background-color: #FFF;
-  padding: 5em 0;
+    background-color: #FFF;
+    padding: 5em 0;
 }
 
 
@@ -339,10 +335,10 @@ nav a:focus {
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+    .col-25, .col-75, input[type=submit] {
+        margin-top: 0;
+        width: 100%;
+    }
 }
 
 
@@ -351,10 +347,10 @@ nav a:focus {
 
 
 footer {
-  background: #232323;
-  color: #fff;
-  text-align: left;
-  padding: 5em 0;
+    background: #232323;
+    color: #fff;
+    padding: 5em 0;
+    text-align: left;
 }
 
 
@@ -363,17 +359,18 @@ footer {
 
 
 .slideshow-container {
-  max-width: 100%;
-  max-height: auto;
-  position: relative;
-  margin: auto;
+    margin: auto;
+    max-width: 100%;
+    max-height: auto;
+    position: relative;
+    
 }
 
 .center {
-  width: 100%;
-  max-height: auto;
-  position: relative;
-  margin: auto;
+    max-height: auto;
+    margin: auto;
+    position: relative;
+    width: 100%;
 }
 
 .slides {
@@ -381,69 +378,70 @@ footer {
 }
 
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -22px;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    transition: 0.6s ease;
+    user-select: none;
+    width: auto;
+    
 }
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    right: 0;
 }
 
 .prev {
-    left: 0;
     border-radius: 3px 0 0 3px;
+    left: 0;
   }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  display: none;
+    bottom: 8px;
+    color: #f2f2f2;
+    display: none;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  display: none;
+    color: #f2f2f2;
+    display: none;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 .gallerypre {
