@@ -332,6 +332,11 @@ nav a:focus {
     top: .6em;
     padding: 0 .2em;
   }
+    
+  home-about-textbox {
+    width: 98.8vw;
+  }
+
 }
 
 @media (min-width: 60rem) {
@@ -344,9 +349,6 @@ nav a:focus {
     padding: 0 .36em;
   }
     
-    home-about-textbox {
-        width: 98.8vw;
-    }
 }
 
 
