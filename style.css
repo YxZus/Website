@@ -343,6 +343,10 @@ nav a:focus {
     top: .36em;
     padding: 0 .36em;
   }
+    
+    home-about-textbox {
+        width: 98.8vw;
+    }
 }
 
 
