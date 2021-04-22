@@ -310,6 +310,7 @@ nav a:focus {
   outline-offset: -2.5em;
   color: #FFF;
   position: relative;
+  margin-left: 0;
 }
 
 .home-about-textbox h1 {
